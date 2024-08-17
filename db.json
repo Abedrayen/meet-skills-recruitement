@@ -29,12 +29,13 @@
       "userName": "rayen",
       "firstName": "Rayen",
       "lastName": "Abed",
+      "hourlyRate": "50",
       "email": "rayenabed87@gmail.com",
       "phone": "98147682",
       "skills": [
         "React"
       ],
-      "bio": "Description",
+      "bio": "",
       "availability": "immediate",
       "profileType": "dev",
       "password": "rayen123",
@@ -66,6 +67,7 @@
         "Electronic",
         "Insurance"
       ],
+      "username":"hirer",
       "password": "hirer123",
       "profileType": "hirer",
       "id": "be22"

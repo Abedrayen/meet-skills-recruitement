@@ -7,7 +7,7 @@ import HirerProfile from './components/HirerProfile';
 import Offers from './components/Offers';
 import DeveloperOrders from './components/DeveloperOrders';
 import HirerOrders from './components/HirerOrders';
-
+import DevProfile from './components/DevProfile';
 function App() {
   return (
     <Router>
@@ -19,6 +19,7 @@ function App() {
         <Route path="/offers" element={<Offers />} />
         <Route path="/dev-orders" element={<DeveloperOrders />} />
         <Route path="/hirer-orders" element={<HirerOrders />} />
+        <Route path="/developer/:developerId" component={DevProfile} />
       </Routes>
     </Router>
   );

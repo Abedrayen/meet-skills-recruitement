@@ -196,6 +196,13 @@ function DeveloperProfile() {
                   onChange={(e) => setLastName(e.target.value)}
                   style={inputStyle}
                 />
+                  <input
+                  type="number"
+                  placeholder="Hourly rate"
+                  value={hourlyRate}
+                  onChange={(e) => setHourlyRate(e.target.value)}
+                  style={inputStyle}
+                />
               </div>
             </div>
           </div>

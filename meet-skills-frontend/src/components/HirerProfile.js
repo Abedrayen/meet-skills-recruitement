@@ -8,7 +8,7 @@ function HirerProfile() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [businesses, setBusinesses] = useState([]);
-  const [userName, setUserName] = useState('');
+  const [username, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [profileType, setProfileType] = useState('hirer');
   const businessOptions = [
@@ -28,7 +28,7 @@ function HirerProfile() {
         .get(`http://localhost:3000/hirer/${userId}`)
         .then((response) => {
           const user = response.data;
-          setUserName(user.userName);
+          setUserName(user.username);
           setCompanyName(user.companyName);
           setEmail(user.email);
           setPhone(user.phone);
@@ -57,7 +57,7 @@ function HirerProfile() {
   const handleProfileUpdate = async () => {
     try {
       const response = await axios.put(`http://localhost:3000/hirer/${id}`, {
-        userName,
+        username,
         companyName,
         email,
         phone,
